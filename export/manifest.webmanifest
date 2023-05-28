@@ -1,0 +1,12 @@
+{
+  "name": "NIGHT SHIFT",
+  "short_name": "NIGHT SHIFT",
+  "id": "com.ikmalsaid.slendergame",
+  "description": "You take on the role of a night shift worker in an unfamiliar location. As you go about your duties, you stumble upon strange objects scattered throughout the area. But be warned: there is a ghost that will try to kill you if you pick up too many mysterious objects. To win the game, you must carefully choose and collect 10 of these objects while avoiding the deadly ghost. Can you survive the night shift?\n\nHOW TO PLAY\n\n1) Use keyboard to navigate and mouse to move the camera around.\n2) On mobile devices, you can use the virtual controller on-screen.\n\nACKNOWLEDGEMENT\n\n1) GDevelop open-source game engine contributors.\n2) GDevelop 3D Jam team, judges, sponsors and moderators.\n3) My lovely mother and family for the continuous support.\n4) All of you for playing my game.",
+  "orientation": "landscape",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "black",
+  "categories": ["games", "entertainment"],
+  "icons": []
+}
