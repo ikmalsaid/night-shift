@@ -9,7 +9,7 @@ gdjs.HomeCode.GDAboutObjects1= [];
 gdjs.HomeCode.GDAboutObjects2= [];
 
 
-gdjs.HomeCode.asyncCallback19712756 = function (runtimeScene, asyncObjectsList) {
+gdjs.HomeCode.asyncCallback19201612 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Story1", false);
 }}
 gdjs.HomeCode.eventsList0 = function(runtimeScene) {
@@ -20,7 +20,7 @@ gdjs.HomeCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.HomeCode.asyncCallback19712756(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.HomeCode.asyncCallback19201612(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -37,7 +37,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19712052);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19200908);
 }
 }
 if (isConditionTrue_0) {
@@ -65,7 +65,7 @@ gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.HomeCode.GDTransition
 {for(var i = 0, len = gdjs.HomeCode.GDTransitionObjects1.length ;i < len;++i) {
     gdjs.HomeCode.GDTransitionObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 0.5, "Flash", "Backward", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
-}{gdjs.evtTools.sound.playMusic(runtimeScene, "Sounds\\music.mp3", false, 50, 1);
+}{gdjs.evtTools.sound.playMusic(runtimeScene, "Sounds\\music.mp3", true, 50, 1);
 }}
 
 }

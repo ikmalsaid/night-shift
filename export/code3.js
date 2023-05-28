@@ -7,7 +7,7 @@ gdjs.ClickCode.GDBlinkingTextObjects1= [];
 gdjs.ClickCode.GDBlinkingTextObjects2= [];
 
 
-gdjs.ClickCode.asyncCallback19705900 = function (runtimeScene, asyncObjectsList) {
+gdjs.ClickCode.asyncCallback19194332 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Home", false);
 }}
 gdjs.ClickCode.eventsList0 = function(runtimeScene) {
@@ -18,7 +18,7 @@ gdjs.ClickCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.ClickCode.asyncCallback19705900(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.ClickCode.asyncCallback19194332(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -35,7 +35,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19705196);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19193628);
 }
 }
 if (isConditionTrue_0) {

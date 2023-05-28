@@ -9,7 +9,7 @@ gdjs.Story2Code.GDStory1Objects1= [];
 gdjs.Story2Code.GDStory1Objects2= [];
 
 
-gdjs.Story2Code.asyncCallback19684988 = function (runtimeScene, asyncObjectsList) {
+gdjs.Story2Code.asyncCallback19173364 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "GameScene", false);
 }}
 gdjs.Story2Code.eventsList0 = function(runtimeScene) {
@@ -20,7 +20,7 @@ gdjs.Story2Code.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.Story2Code.asyncCallback19684988(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.Story2Code.asyncCallback19173364(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -34,7 +34,7 @@ runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5)
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19687828);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19176204);
 }
 if (isConditionTrue_0) {
 {gdjs.evtTools.sound.playSound(runtimeScene, "Sounds\\typing.mp3", false, 50, gdjs.randomInRange(-(0.5), 1.5));
@@ -53,7 +53,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19684284);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19172660);
 }
 }
 if (isConditionTrue_0) {

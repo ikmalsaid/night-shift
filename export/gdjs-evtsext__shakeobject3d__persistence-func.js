@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ShakeObject3D__Persistence !== "undefined") {
 gdjs.evtsExt__ShakeObject3D__Persistence = {};
 
 
-gdjs.evtsExt__ShakeObject3D__Persistence.userFunc0x883a00 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__Persistence.userFunc0x1100450 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__ShakeObject3D__Persistence.eventsList0 = function(runtimeScene, ev
 {
 
 
-gdjs.evtsExt__ShakeObject3D__Persistence.userFunc0x883a00(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ShakeObject3D__Persistence.userFunc0x1100450(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
