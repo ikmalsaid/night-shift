@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ShakeObject3D__SetLacunarity !== "undefined") {
 gdjs.evtsExt__ShakeObject3D__SetLacunarity = {};
 
 
-gdjs.evtsExt__ShakeObject3D__SetLacunarity.userFunc0x10e5ee0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__SetLacunarity.userFunc0x8ae050 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__ShakeObject3D__SetLacunarity.eventsList0 = function(runtimeScene, 
 {
 
 
-gdjs.evtsExt__ShakeObject3D__SetLacunarity.userFunc0x10e5ee0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ShakeObject3D__SetLacunarity.userFunc0x8ae050(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

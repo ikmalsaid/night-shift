@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ShakeObject3D__Delete !== "undefined") {
 gdjs.evtsExt__ShakeObject3D__Delete = {};
 
 
-gdjs.evtsExt__ShakeObject3D__Delete.userFunc0xb29eb0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__Delete.userFunc0x111eca8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__ShakeObject3D__Delete.eventsList0 = function(runtimeScene, eventsF
 {
 
 
-gdjs.evtsExt__ShakeObject3D__Delete.userFunc0xb29eb0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ShakeObject3D__Delete.userFunc0x111eca8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
