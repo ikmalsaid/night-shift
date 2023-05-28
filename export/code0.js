@@ -285,25 +285,6 @@ gdjs.copyArray(runtimeScene.getObjects("LookJoystick"), gdjs.GameSceneCode.GDLoo
 {
 
 
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Camera"), gdjs.GameSceneCode.GDCameraObjects2);
-{for(var i = 0, len = gdjs.GameSceneCode.GDCameraObjects2.length ;i < len;++i) {
-    gdjs.GameSceneCode.GDCameraObjects2[i].setAngle(gdjs.GameSceneCode.GDCameraObjects2[i].getAngle() + (gdjs.evtsExt__Gamepads__StickForceX.func(runtimeScene, 1, "Right", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) * 4));
-}
-}{for(var i = 0, len = gdjs.GameSceneCode.GDCameraObjects2.length ;i < len;++i) {
-    gdjs.GameSceneCode.GDCameraObjects2[i].setRotationY(gdjs.GameSceneCode.GDCameraObjects2[i].getRotationY() + (gdjs.evtsExt__Gamepads__StickForceY.func(runtimeScene, 1, "Right", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) * 2));
-}
-}}
-
-}
-
-
-{
-
-
 
 }
 
@@ -472,47 +453,27 @@ gdjs.GameSceneCode.eventsList4(runtimeScene);} //End of subevents
 
 {
 
-gdjs.copyArray(runtimeScene.getObjects("WalkJoystick"), gdjs.GameSceneCode.GDWalkJoystickObjects2);
+gdjs.copyArray(runtimeScene.getObjects("WalkJoystick"), gdjs.GameSceneCode.GDWalkJoystickObjects1);
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.systemInfo.isMobile();
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-for (var i = 0, k = 0, l = gdjs.GameSceneCode.GDWalkJoystickObjects2.length;i<l;++i) {
-    if ( gdjs.GameSceneCode.GDWalkJoystickObjects2[i].IsPressed((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+for (var i = 0, k = 0, l = gdjs.GameSceneCode.GDWalkJoystickObjects1.length;i<l;++i) {
+    if ( gdjs.GameSceneCode.GDWalkJoystickObjects1[i].IsPressed((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
         isConditionTrue_0 = true;
-        gdjs.GameSceneCode.GDWalkJoystickObjects2[k] = gdjs.GameSceneCode.GDWalkJoystickObjects2[i];
+        gdjs.GameSceneCode.GDWalkJoystickObjects1[k] = gdjs.GameSceneCode.GDWalkJoystickObjects1[i];
         ++k;
     }
 }
-gdjs.GameSceneCode.GDWalkJoystickObjects2.length = k;
-}
-if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Camera"), gdjs.GameSceneCode.GDCameraObjects2);
-/* Reuse gdjs.GameSceneCode.GDWalkJoystickObjects2 */
-{for(var i = 0, len = gdjs.GameSceneCode.GDCameraObjects2.length ;i < len;++i) {
-    gdjs.GameSceneCode.GDCameraObjects2[i].addPolarForce((( gdjs.GameSceneCode.GDWalkJoystickObjects2.length === 0 ) ? 0 :gdjs.GameSceneCode.GDWalkJoystickObjects2[0].StickAngle((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) + (gdjs.GameSceneCode.GDCameraObjects2[i].getAngle()) + 90, 400, 0);
-}
-}}
-
-}
-
-
-{
-
-
-let isConditionTrue_0 = false;
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__Gamepads__C_Controller_X_is_connected.func(runtimeScene, 1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
-if (isConditionTrue_0) {
-isConditionTrue_0 = false;
-isConditionTrue_0 = gdjs.evtsExt__Gamepads__StickForce.func(runtimeScene, 1, "Left", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) > 0;
+gdjs.GameSceneCode.GDWalkJoystickObjects1.length = k;
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(runtimeScene.getObjects("Camera"), gdjs.GameSceneCode.GDCameraObjects1);
+/* Reuse gdjs.GameSceneCode.GDWalkJoystickObjects1 */
 {for(var i = 0, len = gdjs.GameSceneCode.GDCameraObjects1.length ;i < len;++i) {
-    gdjs.GameSceneCode.GDCameraObjects1[i].addPolarForce(gdjs.evtsExt__Gamepads__StickAngle.func(runtimeScene, 1, "Left", (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) + (gdjs.GameSceneCode.GDCameraObjects1[i].getAngle()) + 90, 400, 0);
+    gdjs.GameSceneCode.GDCameraObjects1[i].addPolarForce((( gdjs.GameSceneCode.GDWalkJoystickObjects1.length === 0 ) ? 0 :gdjs.GameSceneCode.GDWalkJoystickObjects1[0].StickAngle((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined))) + (gdjs.GameSceneCode.GDCameraObjects1[i].getAngle()) + 90, 400, 0);
 }
 }}
 

@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ShakeObject3D__SetSeed !== "undefined") {
 gdjs.evtsExt__ShakeObject3D__SetSeed = {};
 
 
-gdjs.evtsExt__ShakeObject3D__SetSeed.userFunc0xa0df38 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__SetSeed.userFunc0x74c710 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 gdjs._shakeObjectExtension.noiseManager.setSeed(eventsFunctionContext.getArgument("Seed"));
 };
@@ -17,7 +17,7 @@ gdjs.evtsExt__ShakeObject3D__SetSeed.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__ShakeObject3D__SetSeed.userFunc0xa0df38(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ShakeObject3D__SetSeed.userFunc0x74c710(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 
