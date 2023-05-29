@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ShakeObject3D__SetLoopPeriodX !== "undefined") {
 gdjs.evtsExt__ShakeObject3D__SetLoopPeriodX = {};
 
 
-gdjs.evtsExt__ShakeObject3D__SetLoopPeriodX.userFunc0xb1df30 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__SetLoopPeriodX.userFunc0x94b3b8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__ShakeObject3D__SetLoopPeriodX.eventsList0 = function(runtimeScene,
 {
 
 
-gdjs.evtsExt__ShakeObject3D__SetLoopPeriodX.userFunc0xb1df30(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ShakeObject3D__SetLoopPeriodX.userFunc0x94b3b8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

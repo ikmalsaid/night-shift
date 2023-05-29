@@ -1,16 +1,18 @@
-gdjs.ClickCode = {};
-gdjs.ClickCode.GDTransitionObjects1= [];
-gdjs.ClickCode.GDTransitionObjects2= [];
-gdjs.ClickCode.GDOverlayObjects1= [];
-gdjs.ClickCode.GDOverlayObjects2= [];
-gdjs.ClickCode.GDBlinkingTextObjects1= [];
-gdjs.ClickCode.GDBlinkingTextObjects2= [];
+gdjs.Story1Code = {};
+gdjs.Story1Code.GDTransitionObjects1= [];
+gdjs.Story1Code.GDTransitionObjects2= [];
+gdjs.Story1Code.GDOverlayObjects1= [];
+gdjs.Story1Code.GDOverlayObjects2= [];
+gdjs.Story1Code.GDBlinkingTextObjects1= [];
+gdjs.Story1Code.GDBlinkingTextObjects2= [];
+gdjs.Story1Code.GDStory1Objects1= [];
+gdjs.Story1Code.GDStory1Objects2= [];
 
 
-gdjs.ClickCode.asyncCallback19194332 = function (runtimeScene, asyncObjectsList) {
-{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Home", false);
+gdjs.Story1Code.asyncCallback20662196 = function (runtimeScene, asyncObjectsList) {
+{gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Story2", false);
 }}
-gdjs.ClickCode.eventsList0 = function(runtimeScene) {
+gdjs.Story1Code.eventsList0 = function(runtimeScene) {
 
 {
 
@@ -18,14 +20,30 @@ gdjs.ClickCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.ClickCode.asyncCallback19194332(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.Story1Code.asyncCallback20662196(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.ClickCode.eventsList1 = function(runtimeScene) {
+};gdjs.Story1Code.eventsList1 = function(runtimeScene) {
+
+{
+
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20665004);
+}
+if (isConditionTrue_0) {
+{gdjs.evtTools.sound.playSound(runtimeScene, "Sounds\\typing.mp3", false, 50, gdjs.randomInRange(-(0.9), 1.1));
+}}
+
+}
+
+
+};gdjs.Story1Code.eventsList2 = function(runtimeScene) {
 
 {
 
@@ -35,18 +53,18 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(19193628);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20661492);
 }
 }
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.ClickCode.GDTransitionObjects1);
-{for(var i = 0, len = gdjs.ClickCode.GDTransitionObjects1.length ;i < len;++i) {
-    gdjs.ClickCode.GDTransitionObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 0.5, "Flash", "Forward", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.Story1Code.GDTransitionObjects1);
+{for(var i = 0, len = gdjs.Story1Code.GDTransitionObjects1.length ;i < len;++i) {
+    gdjs.Story1Code.GDTransitionObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 0.5, "Flash", "Forward", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }{gdjs.evtTools.sound.playSound(runtimeScene, "Sounds\\button.mp3", false, 100, 1);
 }
 { //Subevents
-gdjs.ClickCode.eventsList0(runtimeScene);} //End of subevents
+gdjs.Story1Code.eventsList0(runtimeScene);} //End of subevents
 }
 
 }
@@ -59,9 +77,13 @@ let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.runtimeScene.sceneJustBegins(runtimeScene);
 if (isConditionTrue_0) {
-gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.ClickCode.GDTransitionObjects1);
-{for(var i = 0, len = gdjs.ClickCode.GDTransitionObjects1.length ;i < len;++i) {
-    gdjs.ClickCode.GDTransitionObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 0.5, "Flash", "Backward", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+gdjs.copyArray(runtimeScene.getObjects("BlinkingText"), gdjs.Story1Code.GDBlinkingTextObjects1);
+gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.Story1Code.GDTransitionObjects1);
+{for(var i = 0, len = gdjs.Story1Code.GDTransitionObjects1.length ;i < len;++i) {
+    gdjs.Story1Code.GDTransitionObjects1[i].getBehavior("FlashTransitionPainter").PaintEffect("0;0;0", 0.5, "Flash", "Backward", 0, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+}
+}{for(var i = 0, len = gdjs.Story1Code.GDBlinkingTextObjects1.length ;i < len;++i) {
+    gdjs.Story1Code.GDBlinkingTextObjects1[i].hide();
 }
 }}
 
@@ -73,31 +95,56 @@ gdjs.copyArray(runtimeScene.getObjects("Transition"), gdjs.ClickCode.GDTransitio
 
 let isConditionTrue_0 = false;
 {
-gdjs.copyArray(runtimeScene.getObjects("BlinkingText"), gdjs.ClickCode.GDBlinkingTextObjects1);
-{for(var i = 0, len = gdjs.ClickCode.GDBlinkingTextObjects1.length ;i < len;++i) {
-    gdjs.ClickCode.GDBlinkingTextObjects1[i].getBehavior("Flash").Flash(1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
+gdjs.copyArray(runtimeScene.getObjects("BlinkingText"), gdjs.Story1Code.GDBlinkingTextObjects1);
+{for(var i = 0, len = gdjs.Story1Code.GDBlinkingTextObjects1.length ;i < len;++i) {
+    gdjs.Story1Code.GDBlinkingTextObjects1[i].getBehavior("Flash").Flash(1, (typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined));
 }
 }}
 
 }
 
 
+{
+
+gdjs.copyArray(runtimeScene.getObjects("Story1"), gdjs.Story1Code.GDStory1Objects1);
+
+let isConditionTrue_0 = false;
+isConditionTrue_0 = false;
+for (var i = 0, k = 0, l = gdjs.Story1Code.GDStory1Objects1.length;i<l;++i) {
+    if ( gdjs.Story1Code.GDStory1Objects1[i].getBehavior("Text_AutoTyping").IsCharacterJustAdded((typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined)) ) {
+        isConditionTrue_0 = true;
+        gdjs.Story1Code.GDStory1Objects1[k] = gdjs.Story1Code.GDStory1Objects1[i];
+        ++k;
+    }
+}
+gdjs.Story1Code.GDStory1Objects1.length = k;
+if (isConditionTrue_0) {
+
+{ //Subevents
+gdjs.Story1Code.eventsList1(runtimeScene);} //End of subevents
+}
+
+}
+
+
 };
 
-gdjs.ClickCode.func = function(runtimeScene) {
+gdjs.Story1Code.func = function(runtimeScene) {
 runtimeScene.getOnceTriggers().startNewFrame();
 
-gdjs.ClickCode.GDTransitionObjects1.length = 0;
-gdjs.ClickCode.GDTransitionObjects2.length = 0;
-gdjs.ClickCode.GDOverlayObjects1.length = 0;
-gdjs.ClickCode.GDOverlayObjects2.length = 0;
-gdjs.ClickCode.GDBlinkingTextObjects1.length = 0;
-gdjs.ClickCode.GDBlinkingTextObjects2.length = 0;
+gdjs.Story1Code.GDTransitionObjects1.length = 0;
+gdjs.Story1Code.GDTransitionObjects2.length = 0;
+gdjs.Story1Code.GDOverlayObjects1.length = 0;
+gdjs.Story1Code.GDOverlayObjects2.length = 0;
+gdjs.Story1Code.GDBlinkingTextObjects1.length = 0;
+gdjs.Story1Code.GDBlinkingTextObjects2.length = 0;
+gdjs.Story1Code.GDStory1Objects1.length = 0;
+gdjs.Story1Code.GDStory1Objects2.length = 0;
 
-gdjs.ClickCode.eventsList1(runtimeScene);
+gdjs.Story1Code.eventsList2(runtimeScene);
 
 return;
 
 }
 
-gdjs['ClickCode'] = gdjs.ClickCode;
+gdjs['Story1Code'] = gdjs.Story1Code;
