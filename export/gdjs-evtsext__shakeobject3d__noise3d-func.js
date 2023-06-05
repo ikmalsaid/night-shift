@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ShakeObject3D__Noise3d !== "undefined") {
 gdjs.evtsExt__ShakeObject3D__Noise3d = {};
 
 
-gdjs.evtsExt__ShakeObject3D__Noise3d.userFunc0x11fb1a0 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__Noise3d.userFunc0x9248c8 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 const x = eventsFunctionContext.getArgument("X");
@@ -22,7 +22,7 @@ gdjs.evtsExt__ShakeObject3D__Noise3d.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__ShakeObject3D__Noise3d.userFunc0x11fb1a0(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ShakeObject3D__Noise3d.userFunc0x9248c8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

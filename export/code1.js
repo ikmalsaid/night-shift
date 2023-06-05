@@ -25,7 +25,7 @@ gdjs.OptionsCode.GDButton2Objects1= [];
 gdjs.OptionsCode.GDButton2Objects2= [];
 
 
-gdjs.OptionsCode.asyncCallback20732692 = function (runtimeScene, asyncObjectsList) {
+gdjs.OptionsCode.asyncCallback21461812 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.popScene(runtimeScene);
 }}
 gdjs.OptionsCode.eventsList0 = function(runtimeScene) {
@@ -36,14 +36,14 @@ gdjs.OptionsCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.OptionsCode.asyncCallback20732692(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.OptionsCode.asyncCallback21461812(runtimeScene, asyncObjectsList)));
 }
 }
 
 }
 
 
-};gdjs.OptionsCode.asyncCallback20734116 = function (runtimeScene, asyncObjectsList) {
+};gdjs.OptionsCode.asyncCallback21463236 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Home", true);
 }}
 gdjs.OptionsCode.eventsList1 = function(runtimeScene) {
@@ -54,7 +54,7 @@ gdjs.OptionsCode.eventsList1 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.OptionsCode.asyncCallback20734116(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.OptionsCode.asyncCallback21463236(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -79,7 +79,7 @@ for (var i = 0, k = 0, l = gdjs.OptionsCode.GDButtonObjects1.length;i<l;++i) {
 gdjs.OptionsCode.GDButtonObjects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20732292);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21461412);
 }
 }
 if (isConditionTrue_0) {
@@ -112,7 +112,7 @@ for (var i = 0, k = 0, l = gdjs.OptionsCode.GDButton2Objects1.length;i<l;++i) {
 gdjs.OptionsCode.GDButton2Objects1.length = k;
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20733716);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21462836);
 }
 }
 if (isConditionTrue_0) {

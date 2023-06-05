@@ -9,7 +9,7 @@ gdjs.HomeCode.GDAboutObjects1= [];
 gdjs.HomeCode.GDAboutObjects2= [];
 
 
-gdjs.HomeCode.asyncCallback20786644 = function (runtimeScene, asyncObjectsList) {
+gdjs.HomeCode.asyncCallback21516228 = function (runtimeScene, asyncObjectsList) {
 {gdjs.evtTools.runtimeScene.replaceScene(runtimeScene, "Story1", false);
 }}
 gdjs.HomeCode.eventsList0 = function(runtimeScene) {
@@ -20,7 +20,7 @@ gdjs.HomeCode.eventsList0 = function(runtimeScene) {
 {
 {
 const asyncObjectsList = new gdjs.LongLivedObjectsList();
-runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.HomeCode.asyncCallback20786644(runtimeScene, asyncObjectsList)));
+runtimeScene.getAsyncTasksManager().addTask(gdjs.evtTools.runtimeScene.wait(0.5), (runtimeScene) => (gdjs.HomeCode.asyncCallback21516228(runtimeScene, asyncObjectsList)));
 }
 }
 
@@ -37,7 +37,7 @@ isConditionTrue_0 = false;
 isConditionTrue_0 = gdjs.evtTools.input.isMouseButtonPressed(runtimeScene, "Left");
 if (isConditionTrue_0) {
 isConditionTrue_0 = false;
-{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(20785940);
+{isConditionTrue_0 = runtimeScene.getOnceTriggers().triggerOnce(21515524);
 }
 }
 if (isConditionTrue_0) {

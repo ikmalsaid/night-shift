@@ -8,7 +8,7 @@ if (typeof gdjs.evtsExt__ShakeObject3D__Octaves !== "undefined") {
 gdjs.evtsExt__ShakeObject3D__Octaves = {};
 
 
-gdjs.evtsExt__ShakeObject3D__Octaves.userFunc0x1236aa8 = function(runtimeScene, eventsFunctionContext) {
+gdjs.evtsExt__ShakeObject3D__Octaves.userFunc0x791e10 = function(runtimeScene, eventsFunctionContext) {
 "use strict";
 const name = eventsFunctionContext.getArgument("Name");
 
@@ -19,7 +19,7 @@ gdjs.evtsExt__ShakeObject3D__Octaves.eventsList0 = function(runtimeScene, events
 {
 
 
-gdjs.evtsExt__ShakeObject3D__Octaves.userFunc0x1236aa8(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
+gdjs.evtsExt__ShakeObject3D__Octaves.userFunc0x791e10(runtimeScene, typeof eventsFunctionContext !== 'undefined' ? eventsFunctionContext : undefined);
 
 }
 

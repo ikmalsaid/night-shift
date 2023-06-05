@@ -1173,7 +1173,7 @@ gdjs.evtsExt__AutoTyping__BitmapText_AutoTyping.BitmapText_AutoTyping.prototype.
 
 let isConditionTrue_0 = false;
 isConditionTrue_0 = false;
-{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(19584988);
+{isConditionTrue_0 = eventsFunctionContext.getOnceTriggers().triggerOnce(20308916);
 }
 if (isConditionTrue_0) {
 gdjs.copyArray(eventsFunctionContext.getObjects("Object"), gdjs.evtsExt__AutoTyping__BitmapText_AutoTyping.BitmapText_AutoTyping.prototype.ChangeIntervalContext.GDObjectObjects1);
